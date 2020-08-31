@@ -37,5 +37,7 @@ module DevExercise
         routing_specs: false,
         request_specs: false
     end
+
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
 end
