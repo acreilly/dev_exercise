@@ -30,3 +30,8 @@ end
   puts "Creating Organizations"
   org = Organization.create(name: Faker::Company.name, description: Faker::Company.catch_phrase)
 end
+
+User.find_each do |user|
+  user.organizations << Organization.all.sample(5)
+  user.save
+end
