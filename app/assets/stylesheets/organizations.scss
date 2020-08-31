@@ -1,3 +1,36 @@
 // Place all the styles related to the organizations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.organization {
+  .organization-name {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+
+    a {
+      font-size: 35px;
+      line-height: 2;
+      text-decoration: none;
+      &:hover {
+        font-weight: 100;
+      }
+    }
+  }
+
+  .organization-description {
+    margin-bottom: 20px;
+  }
+}
+
+#search-form {
+  margin-bottom: 20px;
+
+  h5 {
+    font-weight: 100;
+  }
+  #search {
+    width: 100%;
+    max-width: 250px;
+  }
+}

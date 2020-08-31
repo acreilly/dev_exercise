@@ -118,7 +118,7 @@ $breakpoint-large: 60em; // 960px
   }
 
   @media only screen and (min-width: $breakpoint-large) {
-    width: 100%;
+    width: 60%;
     max-width: 120rem;
   }
 }
@@ -208,4 +208,8 @@ $breakpoint-large: 60em; // 960px
   @media only screen and (min-width: $breakpoint-med) {
     text-align: right;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.5px;
 }

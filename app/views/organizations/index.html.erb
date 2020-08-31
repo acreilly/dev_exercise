@@ -1,12 +1,17 @@
 <% if params[:search] %>
-  <% provide(:title, "Organization Search Results") %>
+  <% provide(:title, 'Organization Search Results') %>
 <% else %>
-  <% provide(:title, "All Organizations") %>
+  <% provide(:title, 'All Organizations') %>
 <% end %>
 
-<%= render 'search_form' %>
+<div class='container'>
+  <div class='row center'>
+    <div class='col-12'>
+      <%= render 'search_form' %>
+    </div>
+  </div>
+</div>
 
-
-<ol>
+<div class="container">
   <%= render @organizations %>
-</ol>
+</div>

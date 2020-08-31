@@ -4,6 +4,8 @@ header {
   #logo-header {
     display: flex;
     align-items:center;
+    cursor: pointer;
+
     img, h4, i {
       display: inline;
     }
@@ -11,6 +13,7 @@ header {
     h4 {
       margin-left: 20px;
       margin-right: 20px;
+      letter-spacing: 0.5px;
     }
   }
   .logo-img {
@@ -20,6 +23,7 @@ header {
   .user-avatar {
     cursor: pointer;
     font-size: 20px;
+    font-weight: 100;
 
     .icon-down-open {
     font-size: 16px;

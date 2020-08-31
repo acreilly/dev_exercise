@@ -1,3 +1,10 @@
-<li>
-  <%= link_to(organization.name, organization_path(organization)) %>
-</li>
+<div class='row organization'>
+  <div class='col-12'>
+    <div class='organization-name'>
+      <%= link_to(organization.name, organization_path(organization)) %>
+    </div>
+    <div class='organization-description'>
+      <%= organization.description %>
+    </div>
+  </div>
+</div>
