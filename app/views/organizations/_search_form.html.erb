@@ -1,0 +1,5 @@
+<h5>Search for Organizations</h5>
+<%= form_tag organizations_path, method: :get do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag 'Search' %>
+<% end %>

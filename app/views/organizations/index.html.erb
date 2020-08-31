@@ -1,3 +1,9 @@
-<% provide(:title, "All Organizations") %>
+<% if params[:search] %>
+  <% provide(:title, "Organization Search Results") %>
+<% else %>
+  <% provide(:title, "All Organizations") %>
+<% end %>
+
+<%= render 'search_form' %>
 
 <%= render @organizations %>

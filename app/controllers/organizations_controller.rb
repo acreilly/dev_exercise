@@ -1,7 +1,7 @@
 class OrganizationsController < ApplicationController
   before_action :authorize
   def index
-    @organizations = Organization.all
+    @organizations = Organization.search(params[:search])
   end
 
   def show
