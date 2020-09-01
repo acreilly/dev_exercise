@@ -1,7 +1,7 @@
 class Organization < ApplicationRecord
   validates :name, presence: true
   has_many :memberships
-  has_many :users, through: :memberships
+  has_many :members, through: :memberships, source: :user
 
 
   def self.search(query)
