@@ -1,6 +1,24 @@
 <% provide(:title, @organization.name) %>
 
-<%= @organization.name %>
-<%= link_to("Back to All Organizations", organizations_path) %>
+<div class="container">
+  <div class="row organization">
+    <div class='col-12'>
+      <h3 class='organization-name'>
+        <%= @organization.name %>
+      </h3>
+      <div class='organization-description'>
+        <%= @organization.description %>
+      </div>
 
-Description: <%= @organization.description %>
+      <div class="organization-members">
+        <h6>Memberships:</h6>
+        <ul>
+          <% @organization.members.each do |member| %>
+            <li><%= member.full_name %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <%= link_to("Back to All Organizations", organizations_path) %>
+</div>

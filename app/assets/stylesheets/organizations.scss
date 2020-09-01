@@ -7,10 +7,10 @@
   .organization-name {
     border-bottom: 2px solid black;
     margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 2;
 
     a {
-      font-size: 35px;
-      line-height: 2;
       text-decoration: none;
       &:hover {
         font-weight: 100;
@@ -20,6 +20,12 @@
 
   .organization-description {
     margin-bottom: 20px;
+  }
+
+  .organization-members {
+    h6 {
+      margin-bottom: 0;
+    }
   }
 }
 
